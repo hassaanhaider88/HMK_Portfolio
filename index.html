@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/p2.css">
+    <link rel="icon" href="./Images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="bg-[#191313] text-white">
+    <header class="HeaderPos">
+        <div class="Logo">
+            Hassaan Haider<span class="text-white">.</span>
+        </div>
+        <div class="NavbarItems">
+            <div class="HoverEffect" onclick="changeColor(this)">
+                <span class="material-symbols-outlined IconsGap">home</span>
+                <a href="#Home">Home</a>
+            </div>
+            <div class="HoverEffect" onclick="changeColor(this)">
+                <span class="material-symbols-outlined IconsGap">person</span>
+                <a href="#Portfolio">About Me</a>
+            </div>
+            <div class="HoverEffect" onclick="changeColor(this)">
+                <span class="material-symbols-outlined IconsGap">business_center</span>
+                <a href="#Services">My Services</a>
+            </div>
+        </div>
+        <div class="GetBtn">
+            <a href="#ContcatUsForm">
+                <button>GET IN TOUCH</button>
+            </a>
+        </div>
+        <div class="BurgerIcon">
+            <button id="BurIcon" onclick="MyNavbarItems()">&#9776</button>
+        </div>
+        <hr>
+    </header>
+    <hr>
+    <!-- ////////////////////////////// NavbarItems number 2 /////////////////////////////////////// -->
+    <div id="NavbarItemsTwo">
+        <div class="HoverEffect" onclick="changeColor(this)">
+            <span class="material-symbols-outlined IconsGap">home</span>
+            <a href="#Home">Home</a>
+        </div>
+        <div class="HoverEffect" onclick="changeColor(this)">
+            <span class="material-symbols-outlined IconsGap">person</span>
+            <a href="#Portfolio">About Me</a>
+        </div>
+        <div class="HoverEffect" onclick="changeColor(this)">
+            <span class="material-symbols-outlined IconsGap">business_center</span>
+            <a href="#Services">My Services</a>
+        </div>
+        <div class="GetBtn2">
+            <a href="#ContcatUsForm">
+                <button>GET IN TOUCH</button>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--  //////////////////////////////// section of intro start  //////////////////////////   -->
+
+    <section id="Home">
+        <div class="IntroDiv">
+            <div class="Figure">
+                <div class="PicCircle animate-bounce">
+                    <img src="Images/Portfolio.png" alt="This is my Picture" >
+                </div>
+                <div class="FreelancerIcons">
+                    <div class="FreeLancer" style="position: relative; left: 23px; top: 4px;">
+                        <a href="https://www.freelancer.com/u/hasssaanhaider088?frm=hassaanhaider088&sb=t"><svg
+                                role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor"
+                                height="60" width="60">
+
+                                <path
+                                    d="M14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76 4.734.294m-3.058 7.072l3.497-6.522L0 5.13m7.064 7.485l3.303 3.548 3.643-3.57 1.13-6.652-4.439-.228Z"
+                                    id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" fill="white"
+                                    height="60" width="60"></path>
+                            </svg>
+                    </div>
+                    <div class="GitHub">
+                        <a href="https://github.com/hasssaanhaider88"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 496 512" fill="white" height="60" width="60">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg></a>
+                    </div>
+                    <div class="LinkedIn">
+                        <a
+                            href="https://www.linkedin.com/in/hassaan-haider-627272294?utm_source=share&?utm_compaign=share_via&utm_content=profile&utm_medium=android_app"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="60" width="60" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg></a>
+                    </div>
+                    <div class="FaceBook">
+                        <a href="https://www.facebook.com/profile.php?id=61552983160332&mibextid=kFxxJD"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-facebook" height="60"
+                                width="60" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                    fill="white"></path>
+                            </svg></a>
+                    </div>
+
+                </div>
+                <div class="IconsInPictur">
+                    <div class="MainIconsInPic">
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
+                    <div class="MainIconsInPic">
+                        <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <div class="MainIconsInPic">
+                        <span class="material-symbols-outlined">library_add</span>
+                    </div>
+                    <div class="MainIconsInPic">
+                        <span class="material-symbols-outlined">shutter_speed_add</span>
+                    </div>
+                    <div class="MainIconsInPic">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Bio">
+                <div class="NameHeading">
+                    Hassaan Haider
+                </div>
+                <div class="TypingAnim">
+                    <div class="typeWriter">
+                        <h1>I'M A FRONT-END DEVELOPER<span class="cursor">|</span></h1>
+                    </div>
+                </div>
+                <div class="Heading2">Who I am ?</div>
+                <div class="BioPara">
+                    <p>
+                        Embarking on digital journey armed with lines of code and a passion for pixel perfection,I am
+                        a forn-end sorcerer. With a keyboard as my wand, I weave seamless user experience using the
+                        magic
+                        of React.js,TailwindCss and Next.js. From elegant interfaces to interactive wonders, I sculpt
+                        digital landscapes in the symphony of technology, I redefine fornt-end possibilities with each
+                        keystroke. In the vast expanse of web development, I am the architect of innovation, crafting
+                        tomorrow's digital experience today.
+                    </p>
+                </div>
+                <div class="AboutButton">
+                    <span style="font-weight: 600;">MORE ABOUT ME</span>
+                    <button class="BtnArrow">&rightarrow;</button>
+                </div>
+
+            </div>
+            <div class="IconsInRight">
+                <div class="MainIcons">
+                    <span class="material-symbols-outlined">send</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">call</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">library_add</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">shutter_speed_add</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">mail</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- /////////////////////     Section number two start  portfolio      ////////////////////// -->
+    <section id="Portfolio">
+        <div class="PressSection">
+            <div class="ProgreeSide">
+                <div class="ProgressHeading">I'M A FRONT-END DEVELOPER</div>
+                <div class="BioData">
+                    <P style="text-align: justify; padding: 10px; font-weight: 600;">
+                        Passionate front-end develper with a flair for crafting engaging user interfaces and bring
+                        design to
+                        life through code.Proficinte in HTML,CSS,JAVASCRIPT and REACR.JS dedicated to creating seamless
+                        and visually appealing web experience.
+                    </P>
+                </div>
+
+                <div class="ProgreeBars">
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">97%</h4>
+                        <progress value="97" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">HTML</span>
+                    </div>
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">93%</h4>
+                        <progress value="93" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">CSS</span>
+                    </div>
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">87%</h4>
+                        <progress value="87" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">JAVASCRIPT</span>
+                    </div>
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">82%</h4>
+                        <progress value="82" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">REACR.JS</span>
+                    </div>
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">77%</h4>
+                        <progress value="77" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">NEXT.JS</span>
+                    </div>
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">90%</h4>
+                        <progress value="90" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">TAILWINDCSS</span>
+                    </div>
+                    <div class="ProgToMargin">
+                        <h4 style="color: gray; font-size: 20px; margin-bottom: -8px;">85%</h4>
+                        <progress value="85" max="100" class="ProgressBar"></progress>
+                        <span class="SpanHeading">WORDPRESS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="SecondImage">
+                <div class="FirstImage">
+                    <img src="Images/Portfolio.png"alt="This is my Picture" width="100%">
+
+                </div>
+                <div class="FreelancerIcons2">
+                    <div class="FreeLancer" style="position: relative; left: 23px; top: 4px;">
+                        <a href="https://www.freelancer.com/u/hasssaanhaider088?frm=hassaanhaider088&sb=t"><svg
+                                role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor"
+                                height="60" width="60">
+                                <title>Freelancer</title>
+                                <path
+                                    d="M14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76 4.734.294m-3.058 7.072l3.497-6.522L0 5.13m7.064 7.485l3.303 3.548 3.643-3.57 1.13-6.652-4.439-.228Z"
+                                    id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" height="60" width="60"
+                                    fill="white"></path>
+                            </svg>
+                    </div>
+                    <div class="GitHub">
+                        <a href="https://github.com/hasssaanhaider88"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 496 512" fill="white" height="60" width="60">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg></a>
+                    </div>
+                    <div class="LinkedIn">
+                        <a
+                            href="https://www.linkedin.com/in/hassaan-haider-627272294?utm_source=share&?utm_compaign=share_via&utm_content=profile&utm_medium=android_app"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="60" width="60" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg></a>
+                    </div>
+                    <div class="FaceBook">
+                        <a href="https://www.facebook.com/profile.php?id=61552983160332&mibextid=kFxxJD"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-facebook"
+                                viewBox="0 0 16 16" height="60" width="60">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                    fill="white"></path>
+                            </svg></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- the sectoin of Personal informatoin is start -->
+
+    <section id="Services">
+        <div class="OurServices">
+            <div>
+                <H1 class="ServicesHeading">My Services</H1>
+            </div>
+            <div class="MainDivForServicesCard">
+
+                <div class="ServicesCard">
+                    <div class="CardIcon">
+                        <span class="material-symbols-outlined">laptop_mac</span>
+                    </div>
+                    <div class="CardHeading">Product Design</div>
+                    <div class="CardDescription">
+                        <p style="text-align: justify;">Elevate your vision with expert Product design. From concept to
+                            prototype,
+                            I specialize in bringing your ideas to life, ensuring a seamless and visually
+                            compelling user experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ServicesCard">
+                    <div class="CardIcon">
+                        <span class="material-symbols-outlined">emoji_objects</span>
+                    </div>
+                    <div class="CardHeading">Idea Generate</div>
+                    <div class="CardDescription">
+                        <p style="text-align: justify;">Unleash the potential of your concepts.
+                            I specialize in refining and develping ideas into actionable plans.Collaborate
+                            with me to turn your innovation thoughts into tangiable,market-ready solution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ServicesCard">
+                    <div class="CardIcon">
+                        <span class="material-symbols-outlined">code</span>
+                    </div>
+                    <div class="CardHeading">Development</div>
+                    <div class="CardDescription">
+                        <p style="text-align: justify;">Experience the power of code.As a front-end develper,I translate
+                            design into
+                            dynamic,interactive and responsive websites.Your digital presence will not only look great
+                            but also
+                            function flawlessly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ServicesCard">
+                    <div class="CardIcon">
+                        <span class="material-symbols-outlined">design_services</span>
+                    </div>
+                    <div class="CardHeading">UI / UX Design</div>
+                    <div class="CardDescription">
+                        <p style="text-align: justify;">Craft a memorable user journey.With a focus on user
+                            interface and experience design,I create intuitive and visually appealing interfaces that
+                            leave a lasting impression.Let's make your digital space stand out.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ServicesCard">
+                    <div class="CardIcon">
+                        <span class="material-symbols-outlined">devices</span>
+                    </div>
+                    <div class="CardHeading">Responsive Design</div>
+                    <div class="CardDescription">
+                        <p style="text-align: justify;">Ensure your website looks and functions
+                            flawlessly across all device. I specialize in responsive design,
+                            optimizing your digital presence for a seamless user experience on
+                            various screen sizes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ServicesCard">
+                    <div class="CardIcon">
+                        <span class="WordPressIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="80" width="80" viewBox="0 0 512 512">
+                                <path fill="white"
+                                    d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1
+                     2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1
+                      12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 
+                      74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.7z" />
+                            </svg>
+                        </span>
+                        <span style="position: relative;
+              top: -81px;
+              right: -88px;" class="ShopifyIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                height="80" width="80">
+                                <path fill="white"
+                                    d="M388.3 104.1a4.7 4.7 0 0 0 -4.4-4c-2 0-37.2-.8-37.2-.8s-21.6-20.8-29.6-28.8V503.2L442.8 472S388.7 106.5 388.3 104.1zM288.7 70.5a116.7 116.7 0 0 0 -7.2-17.6C271 32.9 255.4 22 237 22a15 15 0 0 0 -4 .4c-.4-.8-1.2-1.2-1.6-2C223.4 11.6 213 7.6 200.6 8c-24 .8-48 18-67.3 48.8-13.6 21.6-24 48.8-26.8 70.1-27.6 8.4-46.8 14.4-47.2 14.8-14 4.4-14.4 4.8-16 18-1.2 10-38 291.8-38 291.8L307.9 504V65.7a41.7 41.7 0 0 0 -4.4 .4S297.9 67.7 288.7 70.5zM233.4 87.7c-16 4.8-33.6 10.4-50.8 15.6 4.8-18.8 14.4-37.6 25.6-50 4.4-4.4 10.4-9.6 17.2-12.8C232.2 54.9 233.8 74.5 233.4 87.7zM200.6 24.4A27.5 27.5 0 0 1 215 28c-6.4 3.2-12.8 8.4-18.8 14.4-15.2 16.4-26.8 42-31.6 66.5-14.4 4.4-28.8 8.8-42 12.8C131.3 83.3 163.8 25.2 200.6 24.4zM154.2 244.6c1.6 25.6 69.3 31.2 73.3 91.7 2.8 47.6-25.2 80.1-65.7 82.5-48.8 3.2-75.7-25.6-75.7-25.6l10.4-44s26.8 20.4 48.4 18.8c14-.8 19.2-12.4 18.8-20.4-2-33.6-57.2-31.6-60.8-86.9-3.2-46.4 27.2-93.3 94.5-97.7 26-1.6 39.2 4.8 39.2 4.8L221.4 225.4s-17.2-8-37.6-6.4C154.2 221 153.8 239.8 154.2 244.6zM249.4 82.9c0-12-1.6-29.2-7.2-43.6 18.4 3.6 27.2 24 31.2 36.4Q262.6 78.7 249.4 82.9z" />
+                            </svg></span>
+                    </div>
+                    <div class="CardHeading" style="margin-top: -50px;">WordPress & Shopify develper</div>
+                    <div class="CardDescription">
+                        <p style="text-align: justify; margin-top: -10px;">Harness the power of WordPress and Shopify
+                            with
+                            my development skills.From custom themes to e-commerce solution,
+                            I create tailored website that align with your brand and meet your specific needs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <div>
+        <div class="DivOfHeading">
+            <h1>My Own Website</h1>
+            <p>
+                This is my first and own website. This website does'n need any folder to save the
+                data you just write your html,css or javascript code and on just one click you will be
+                able to see your output.
+            </p>
+        </div>
+
+    </div>
+    <br>
+    <section id="MyWork">
+        <div class="MainImageDiv" id="FirstImage">
+            <div class="ImageContainer">
+                <div class="MainImage">
+                    <img src="./Images/FirstImage.png" width="100%" style=" border-radius: 40px;" alt="">
+                    <button class="RightButton">
+                        <span class="material-symbols-outlined" onclick="Provide2ndImage()">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="MainImageDiv" id="SecondImage">
+            <div class="ImageContainer">
+                <div class="MainImage">
+                    <img src="./Images/SecondImage.png" width="100%" alt="" style="border-radius: 40px;">
+                    <button class="LeftButton">
+                        <span class="material-symbols-outlined" onclick="BackTo1stImage()">arrow_back_ios</span>
+                    </button>
+                    <button class="RightButton">
+                        <span class="material-symbols-outlined" onclick="Provide3rdImage()">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="MainImageDiv " id="TherdImage">
+            <div class="ImageContainer">
+                <div class="MainImage">
+                    <img src="./Images/TherdImage.png" width="100%" alt="" style="border-radius: 40px;">
+                    <button class="LeftButton">
+                        <span class="material-symbols-outlined" onclick="BackTo2ndImage()">arrow_back_ios</span>
+                    </button>
+                    <button class="RightButton">
+                        <span class="material-symbols-outlined" onclick="Provide4thImage()">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="MainImageDiv" id="FourthImage">
+            <div class="ImageContainer">
+                <div class="MainImage">
+                    <img src="./Images/FourthImage.png" width="100%" alt="" style="border-radius: 40px;">
+                    <button class="LeftButton">
+                        <span class="material-symbols-outlined" onclick="BackTo3rdImage()">arrow_back_ios</span>
+                    </button>
+                    <button class="RightButton">
+                        <span class="material-symbols-outlined" onclick="Provide5thImage()">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="MainImageDiv" id="FifthImage">
+            <div class="ImageContainer">
+                <div class="MainImage">
+                    <img src="./Images/FifthImage.png" width="100%" alt="" style="border-radius: 40px;">
+                    <button class="LeftButton">
+                        <span class="material-symbols-outlined" onclick="BackTo4thImage()">arrow_back_ios</span>
+                    </button>
+                    <button class="RightButton">
+                        <span class="material-symbols-outlined" onclick="Provide6thImage()">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="MainImageDiv" id="SixthImage">
+            <div class="ImageContainer">
+                <div class="MainImage">
+                    <img src="./Images/SixthImage.png" width="100%" alt="" style=" border-radius: 40px;">
+                    <button class="LeftButton">
+                        <span class="material-symbols-outlined" onclick="BackTo5thImage()">arrow_back_ios</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <section id="ContcatUsForm">
+        <div class="MainFormContainer">
+            <div class="ContactHeading">Contact Me</div>
+            <div class="FormContainer">
+                <form action="https://api.web3forms.com/submit" method="POST" onsubmit="ClearFormDate()">
+
+                    <!-- <input type="hidden" name="access_key" value="31e4f4ff-4789-44bc-81f7-5fb0de3fc67a"> -->
+
+                    <label id="NameHdg" for="Name">Name:</label><br>
+                    <input type="text" name="name" id="Name" class="FormInput" placeholder="Enter your Name......"
+                        required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="Email" class="FormInput" placeholder="Enter your Email......"
+                        required><br>
+                    <label for="phone">Phone Number</label><br>
+                    <input type="number" name="number" id="Number" class="FormInput"
+                        placeholder="Enter your Phone Number...." required><br>
+                    <label for="message">Message</label><br>
+                    <textarea type="message" name="message" id="Message" placeholder="Type your message here......"
+                        required></textarea><br>
+                    <button id="FormBtn">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="About">
+        <footer>
+
+            <div class="FooterIcons">
+                <div>
+                    <a href="https://www.freelancer.com/u/hasssaanhaider088?frm=hassaanhaider088&sb=t">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor"
+                            height="60" width="60">
+                            <path
+                                d="M14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76 4.734.294m-3.058 7.072l3.497-6.522L0 5.13m7.064 7.485l3.303 3.548 3.643-3.57 1.13-6.652-4.439-.228Z"
+                                id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" height="60" width="60"
+                                fill="white">
+                            </path>
+                        </svg>
+                </div>
+                <div>
+                    <a href="https://github.com/hasssaanhaider88"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512" fill="white" height="60" width="60">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg></a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.linkedin.com/in/hassaan-haider-627272294?utm_source=share&?utm_compaign=share_via&utm_content=profile&utm_medium=android_app"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="60" width="60" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=61552983160332&mibextid=kFxxJD"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-facebook" viewBox="0 0 16 16"
+                            height="60" width="60">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                fill="white"></path>
+                        </svg></a>
+                </div>
+
+            </div>
+            </div>
+
+        </footer>
+        <span class="CopyRights">
+            <p> &copy; CodingWithSannay 2024. All Rights reserved. </p>
+        </span>
+
+    </section>
+
+</body>
+<script src="/P.js"></script>
+
+</html>
