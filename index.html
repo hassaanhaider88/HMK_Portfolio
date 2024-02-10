@@ -10,6 +10,861 @@
     <link rel="icon" href="./Images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+    html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8e5de;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FBB506;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+progress::-webkit-progress-bar {
+    background: #a29898;
+}
+
+progress::-webkit-progress-value {
+    background: #F9B506;
+}
+
+.BtnShadow {
+    box-shadow: 0px 0px 45px #FBB506;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FIll' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24, ;
+    color: #FBB506;
+    margin-right: -45px;
+
+}
+
+.IconsGap {
+    margin-right: 0px !important;
+    margin-top: 10px;
+}
+
+.HoverEffect {
+    color: rgb(246, 248, 250);
+    transition: 0.5s;
+    font-weight: 500px;
+    padding: 3px;
+}
+
+.HoverEffect:hover {
+    border: none;
+    color: #edc254;
+}
+
+.ElmGap {
+    gap: 50px;
+}
+
+.DIsplay {
+    display: none;
+}
+
+.HeaderPos {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: #000;
+    height: 90px;
+    z-index: 2;
+
+}
+
+.Logo {
+    margin-left: 28px;
+    margin-top: 22px;
+    color: #FBB506;
+    font-size: 23px;
+    font-weight: 700;
+
+}
+
+.NavbarItems {
+    display: flex;
+    margin-left: 260px;
+    margin-top: 20px;
+    gap: 70px;
+    font-weight: 700;
+}
+
+.GetBtn {
+    margin: 5px 5px;
+    background: #FBB506;
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px #FBB506;
+}
+
+.GetBtn2 {
+    margin: 5px 5px;
+    background: #FBB506;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px #FBB506;
+}
+
+.BurgerIcon {
+    display: none;
+}
+
+#NavbarItemsTwo {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 90px;
+    padding: 23px 37px;
+    background: #6c6363;
+    font-weight: 600;
+    border-bottom-right-radius: 60px;
+}
+
+.IntroDiv {
+    margin-top: 90px;
+    display: flex;
+    width: 100%;
+    height: 86vh;
+}
+
+.Figure {
+    width: 40%;
+    margin: auto;
+}
+
+.Bio {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.IconsInRight {
+    width:
+        10%;
+
+
+}
+
+.PicCircle {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border: 5px solid #F9B506;
+    border-radius: 50%;
+    margin-left: 87px;
+    margin-top: 12px;
+    animation: PicUpDown infinite 0.7s;
+}
+
+@keyframes PicUpDown {
+    from {
+       
+        box-shadow: 0px 0px 10px #f9B506
+    }
+
+    to {
+        box-shadow: 0px 0px 50px #f9B506;
+    
+    }
+
+}
+
+.FreelancerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+
+    margin: auto;
+    top: 554px;
+    left: 78px
+}
+
+.FreeLancer {
+    width: 50px;
+    height: 50px;
+}
+
+.GitHub {
+    width: 50px;
+    height: 50px;
+}
+
+.LinkedIn {
+    width: 48px;
+    height: 48px;
+}
+
+.FaceBook {
+    width: 50px;
+    height: 50px;
+}
+
+.IconsInPictur {
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    display: none;
+
+}
+
+.MainIconsInPic {
+    margin: 50px 0px;
+}
+
+.NameHeading {
+    width: 100%;
+    margin: auto;
+    font-size: 70px;
+    font-weight: 500;
+    color: #F9B506;
+}
+
+.Heading2 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.typeWriter h1 {
+    height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing 4.5s steps(30, end), blink-caret 0.75s infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.BioPara {
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.AboutButton {
+    width: 205px;
+    height: 30px;
+    border: 3px solid #F9B506;
+    padding-bottom: 35px;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+
+.BtnArrow {
+    width: 35px;
+    height: 35px;
+    background: #F9B506;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-left: 18px;
+    box-shadow: 4px 0px 1px #f9B506;
+}
+
+.IconsInRight {
+    margin: auto;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 0px 60px;
+}
+
+.PressSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 50px;
+    /* align-items: center; */
+}
+
+.ProgreeSide {
+
+    width: 70%;
+    margin-top: 80px;
+    margin-left: 20px;
+
+}
+
+.SecondImage {
+
+    width: 30%;
+    margin: auto;
+    background: none;
+
+}
+
+.FirstImage {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: wheat;
+    margin-left: 10%;
+    border: 2px solid #F9B506;
+    animation: PicUpDown infinite 0.7s;
+
+}
+
+.FreelancerIcons2 {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.ProgressHeading {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.ProgressBar {
+    width: 80%;
+    height: 8px;
+}
+
+.SpanHeading {
+    font-size: 25px;
+    margin-left: 5px;
+    color: #edc254;
+}
+
+.ProgToMargin {
+    margin-top: 10px;
+}
+
+.OurServices {
+    width: 90%;
+
+    margin: auto;
+}
+
+.ServicesHeading {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 700;
+    color: #F9B506;
+    text-shadow: 5px 10px 10px gray;
+}
+
+.MainDivForServicesCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ServicesCard {
+    box-sizing: border-box;
+    margin: 10px 20px;
+    width: 30%;
+
+    background: #F9B506;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px gray;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.CardHeading {
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.CardIcon {
+
+    margin: auto 40px;
+
+}
+
+.CardIcon .material-symbols-outlined {
+    font-size: 100px;
+    color: white;
+    transition: 1s;
+}
+
+.ServicesCard:hover .material-symbols-outlined {
+
+    color: #F9B506;
+}
+
+.ServicesCard:hover {
+    background: white;
+    color: #F9B506;
+}
+
+.ServicesCard:hover .WordPressIcon svg path {
+    fill: #f9B506;
+    transition: 2s;
+}
+
+.ServicesCard:hover .ShopifyIcon svg path {
+    fill: #f9B506;
+    z-index: 1;
+    transition: 2s;
+}
+
+#MyWork {
+    height: 85vh;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.MainImageDiv {
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin: auto;
+
+    position: relative;
+    margin-left: 150px;
+
+}
+
+.DivOfHeading {
+    width: 100%;
+
+
+}
+
+.DivOfHeading h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    color: #F9B506;
+    text-shadow: 5px 10px 10px gray;
+}
+
+.DivOfHeading p {
+    font-weight: 400;
+    margin: auto;
+    width: 80%;
+    font-size: 25px;
+    color: #fdfcfc;
+}
+
+.ImageContainer {
+    width: 100%;
+    height: 90%;
+
+}
+
+.LeftButton {
+    background: none;
+    position: absolute;
+    bottom: 10px;
+
+
+}
+
+.RightButton {
+    /* background: wheat; */
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    background: none;
+
+}
+
+.LeftButton .material-symbols-outlined {
+    font-size: 50px;
+
+}
+
+.RightButton .material-symbols-outlined {
+    font-size: 50px;
+
+}
+
+#ContcatUsForm {
+    width: 100%;
+
+
+
+}
+
+.MainFormContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.ContactHeading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: #F9B506;
+}
+
+.FormContainer {
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 7px 9px 10px gray;
+    padding: 10px;
+    background: #F9B506;
+    margin: auto;
+}
+
+.FormContainer label {
+
+    font-size: 25px;
+}
+
+.FormInput {
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    margin-left: 5px !important;
+    background: none;
+    width: 95%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#Message {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid black;
+    background: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#FormBtn {
+    width: 90px;
+    background: #F9B506;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px gray;
+    align-items: center;
+}
+
+input::placeholder {
+    color: rgb(240, 213, 213);
+}
+
+textarea::placeholder {
+    color: rgb(240, 213, 213);
+}
+
+
+.FooterIcons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+
+}
+
+#About {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1040px) {
+    .NavbarItems {
+        margin-left: 93px;
+    }
+
+    .IntroDiv {
+        margin-top: 90px;
+        display: flex;
+        width: 100%;
+
+    }
+}
+
+
+
+@media screen and (max-width:880px) {
+    .NavbarItems {
+        display: none;
+    }
+
+    .GetBtn {
+        display: none;
+    }
+
+    .BurgerIcon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        font-size: 23px;
+    }
+
+    .FreelancerIcons {
+        top: 470px;
+    }
+
+    .IconsInPictur {
+        display: block;
+    }
+
+    .IntroDiv {
+        margin-top: 90px;
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Figure {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Bio {
+        width: 100%;
+        margin-top: 120px;
+        padding: 7px;
+
+    }
+
+    .IconsInRight {
+        display: none;
+    }
+
+    .FreelancerIcons {
+        top: 440px;
+        left: 4%;
+    }
+
+    .PicCircle {
+        margin-left: 6px;
+    }
+
+    .NameHeading {
+        font-size: 55px;
+    }
+
+    .typeWriter h1 {
+        font-size: 23px;
+    }
+
+    .PressSection {
+        display: grid;
+    }
+
+    .ProgressHeading {
+        font-size: 33px;
+    }
+
+    .ProgreeSide {
+        width: 100%;
+        order: 2;
+    }
+
+    #Portfolio {
+        margin-top: 208px;
+    }
+
+    .ProgressBar {
+        width: 60%;
+    }
+
+    .SecondImage {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .FirstImage {
+        margin-left: none;
+    }
+
+    .FirstImage {
+        margin-top: 60px;
+    }
+
+    .MainDivForServicesCard {
+        display: block;
+    }
+
+
+
+    .ServicesHeading {
+        font-size: 60px;
+    }
+
+    .ServicesCard {
+        width: 80%;
+    }
+
+    .MainImageDiv {
+        margin-left: 20px;
+    }
+
+    .LeftButton {
+        bottom: 150px;
+        top: 0px;
+    }
+
+    .RightButton {
+        bottom: 150px;
+
+        top: 0px;
+    }
+
+    #ContcatUsForm {
+        margin-top: -160px;
+    }
+
+    .FormContainer {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .NameHeading {
+        font-size: 45px;
+    }
+
+    .PicCircle {
+        margin-left: -19px
+    }
+
+    #Portfolio {
+        margin-top: 253px;
+    }
+
+    .ProgressBar {
+        width: 50%;
+    }
+
+    .ProgressBars {
+        width: 115%;
+    }
+
+    .SecondImage {
+        margin-top: 0px;
+    }
+
+
+
+    .ServicesHeading {
+        font-size: 50px;
+    }
+
+    .LeftButton {
+        bottom: 240px;
+        top: 5px;
+    }
+
+    .RightButton {
+        bottom: 240px;
+        top: 5px;
+    }
+
+    .DivOfHeading h1 {
+        font-size: 40px;
+    }
+
+    .ContactHeading {
+        margin-top: -400px;
+    }
+
+    .FormContainer {
+        width: 80%;
+        /* margin-top: -300px; */
+    }
+
+    #ContcatUsForm {
+        width: 100%;
+        margin-top: 130px;
+    }
+}
+</style>
 </head>
 
 <body class="bg-[#191313] text-white">
