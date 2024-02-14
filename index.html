@@ -1223,6 +1223,19 @@ textarea::placeholder {
 }
 
 
+#TherdDiv {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+#AnimationDIv { 
+  margin: auto;
+  position: absolute;
+  top: 10px;
+}
+
 
 
 
@@ -1940,12 +1953,16 @@ textarea::placeholder {
 
     </section>
     <br>
+   <div id="TherdDiv">
+            <div id="AnimationDIv">
+                
     <section id="ContcatUsForm">
         <div class="MainFormContainer">
             <div class="ContactHeading">Contact Me</div>
             <div class="FormContainer">
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="31e4f4ff-4789-44bc-81f7-5fb0de3fc67a"
+
+                    <input type="hidden" name="access_key" value="31e4f4ff-4789-44bc-81f7-5fb0de3fc67a">
 
                     <label id="NameHdg" for="Name">Name:</label><br>
                     <input type="text" name="name" id="Name" class="FormInput" placeholder="Enter your Name......"
@@ -1966,6 +1983,11 @@ textarea::placeholder {
         </div>
     </section>
 
+
+
+            </div>
+           </div>
+ 
     <section id="About">
         <footer>
 
@@ -2144,6 +2166,27 @@ function ClearFormDate(){
 alert ("ite clicked ");
     
 }
+
+
+    window.addEventListener('scroll',()=>{
+    const AnimationDIv1=document.getElementById("AnimationDIv");
+    let windowScroll= window.scrollY;
+    console.log(windowScroll);
+    if(windowScroll > 2780 && windowScroll < 4000 || windowScroll > 5230){
+        AnimationDIv1.style.left="5%";
+        AnimationDIv1.style.transition="1s";
+        AnimationDIv1.style.width="90%";
+       
+    }
+    else{
+        AnimationDIv1.style.animation="";
+        AnimationDIv1.style.left="-60%";
+        AnimationDIv1.style.rotate="0deg";
+        AnimationDIv1.style.width="20%";
+        AnimationDIv1.style.height="60%"; 
+      }
+    })
+
 
 </script>
 </html>
